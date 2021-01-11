@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--Fig.5.16:fblm.html-->
+<!--Flexible Box Layout Module.-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flexible Box Layout Model</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+		.flexbox
+		{
+			width: 600px;
+			height: 600px;
+			display: -webkit-box;
+		    display: box;
+		    -webkit-box-orient: horizontal;
+		    box-orient: horizontal;
+		}
+		.flexbox > div
+		{
+			-webkit-transition: 1s ease-out;
+			transition: 2s ease-out;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			border: 3px solid black;
+			width: 130px;
+			margin: 10px -10px 10px 0px;
+			padding: 20px 20px 20px 20px;
+			box-shadow: 20px 20px 20px dimgrey;
+
+		}
+		.flexbox > div:nth-child(1){ background-color: lightgrey; }
+		.flexbox > div:nth-child(2){ background-color: lightgrey; }
+		.flexbox > div:nth-child(3){ background-color: lightgrey; }
+		.flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+		.flexbox > div:hover { width: 300px; color: white; font-weight: bold; }
+		.flexbox > div:nth-child(1):hover { background-color: royalblue; }
+		.flexbox > div:nth-child(2):hover { background-color: crimson; }
+		.flexbox > div:nth-child(3):hover { background-color: crimson; }
+		.flexbox > div:nth-child(4):hover { background-color: darkgreen; }
+		p { height: 400px; overflow: hidden; font-family: "Rosario" }
+
+
+
+
+
+	</style>
+	
+</head>
+<body>
+	
+	   <div class="flexbox">
+		<div><img src="image2.png" alt="Travelling image" height="100" width="125">
+			<p><b><i>Travel:</i></b><br>
+			Traveling is a passion of mine, i really love exploring new contries all over the world ,learning new cultures meeting new people and of course making new friends.</p></div>
+			<div><img src="image4.png" alt="Volleyball image" height="100" width="125">
+				<p><b><i>Volleyball:</i></b><br>
+				Is a game i like to play with my friends when i'm not doing anything.At first i didn't like it so much because i didn't know to play very well, but with time passing by i started liking it and playing more because my skills were at a bigger level.</p></div>
+		<div><img src="image8.png" alt="KPOP image" height="100" width="125">
+				<p><b><i>KPOP:</i></b><br>A lot of people in Kosovo doesn't actually know what kpop means, kpop is a music genre that is created in Korea,they make great music, and has many good dancers that i like listening and watching,at my free time i usually watch videos of kpop groups it's really fun watching them.</p></div>
+		<div><img src="image16.png" height="100" width="125" alt="Dancing image">
+			    <p><b><i>Dance:<br></i></b>
+			    I grow to like dancing more and more by watching KPOP performaces , as i mentioned earlier.</p></div>
+	</div>
+
+</body>
+</html>

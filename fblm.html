@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Fig.5.16:fblm.html-->
+<!--Flexible Box Layout Module.-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flexible Box Layout Model</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		.flexbox
+		{
+			width: 600px;
+			height: 650px;
+			display: -webkit-box;
+		    display: box;
+		    -webkit-box-orient: horizontal;
+		    box-orient: horizontal;
+		}
+		.flexbox > div
+		{
+			-webkit-transition: 1s ease-out;
+			transition: 1s ease-out;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			border: 2px solid black;
+			width: 100px;
+			margin: 10px -10px 10px 0px;
+			padding: 20px 20px 20px 20px;
+			box-shadow: 10px 10px 10px dimgrey;
+
+		}
+		.flexbox > div:nth-child(1){ background-color: lightgrey; }
+		.flexbox > div:nth-child(2){ background-color: lightgrey; }
+		.flexbox > div:nth-child(3){ background-color: lightgrey; }
+		.flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+		.flexbox > div:hover { width: 400px; color: white; font-weight: bold; }
+		.flexbox > div:nth-child(1):hover { background-color: royalblue; }
+		.flexbox > div:nth-child(2):hover { background-color: crimson; }
+		.flexbox > div:nth-child(3):hover { background-color: crimson; }
+		.flexbox > div:nth-child(4):hover { background-color: darkgreen; }
+		p { height: 400px; overflow: hidden; font-family: "Rosario" }
+
+
+
+
+
+	</style>
+	
+</head>
+<body>
+	<div class="flexbox">
+		<div><img src="GPP.jpg" alt="Good Programming practice icon">
+			<p>Good Programming Practices call attention to techniques that will help you produce programs that are clearer , more understandable and more maintainable.</p></div>
+			<div><img src="GPP.jpg" alt="Error prevention icon">
+				<p>Error-prevention Tips contain suggestions for exposing bugs and removing them from your programs; many describe aspects of programming that prevent bugs from getting into programs in the first place.</p></div>
+		<div><img src="GPP.jpg" alt="Common programming error icon">
+				<p>Common Programming Errors point out the errors that students tend to make frequently.These Common Programming errors  reduce the likelihood that you'll make the same mistakes.</p></div>
+		<div><img src="GPP.jpg">
+			    <p>Software Enginnering Observations highlight architecural and design issues that affect the construction of software systems,especially large-scale systems.</p></div>
+	</div>
+
+</body>
+</html>
